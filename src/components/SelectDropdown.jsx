@@ -37,7 +37,7 @@ const SelectDropdown = () => {
         </select>
         <label>City:</label>
         <select>
-            {countries[country].cities.map((city, index) => {
+            {countries[country] && countries[country].cities.map((city, index) => {
                 return <option value={index}>{city}</option>
             })}
         </select>
